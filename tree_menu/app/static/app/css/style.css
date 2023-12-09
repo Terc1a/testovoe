@@ -1,0 +1,14 @@
+body {
+    background-color: gray;
+    background: gray;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+}

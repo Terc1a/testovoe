@@ -1,0 +1,13 @@
+{% load static %}
+{% load custom_tags %}
+<link rel="stylesheet" href="{% static 'app/css/style.css' %}">
+<body>
+<ul>
+    {% for item in menu %}
+        {% if item.url %}<li><a href='{{ item.url }}'>{{ item }}</li>
+        {% elif item.name %}<li><a href='{{ item.name }}'>{{ item }}</li>
+        {% else %}{% include 'app/menu.html' with menu=item %}
+        {% endif %}
+    {% endfor %}
+</ul>
+</body>
